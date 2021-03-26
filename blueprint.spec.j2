@@ -1,0 +1,27 @@
+Summary: {{ summary }}
+Name: {{ name }}
+Version: {{ version }}
+Release: {{ release }}
+Group: Test
+License: {{ license }}
+Distribution: RPM blueprint.
+BuildArch: {{ arch }}
+
+%description
+{{ description }}
+
+%prep
+{{ prep }}
+
+%build
+{{ build }}
+
+%install
+{{ install }}
+
+%clean
+rm -rf %{buildroot}
+{{ clean }}
+
+%files
+{{ files }}
